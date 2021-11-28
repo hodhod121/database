@@ -28,15 +28,12 @@
 --select * from game.player where age<30
 
 --8)
---delete jacket.model,jacket.size,jacket.material from game.player 
---join game.jacket on player.PN=jacket.PN where player.name="Johan Andersson"
+--delete from game.jacket where PN=(select PN from player where name="Johan Andersson")
 
 --9)
---delete jacket.model,jacket.size,jacket.material from game.player 
---join game.jacket on player.PN=jacket.PN where player.name="Johan Andersson"
+--delete from game.club where PN=(select PN from player where name="Nicklas Jansson");
+--delete from game.jacket where PN=(select PN from player where name="Nicklas Jansson");
+--delete from game.player where name="Nicklas Jansson";
 
 --10)
---delete player.name,player.age,player.PN from game.player 
---inner join game.club on player.PN=club.owner 
---inner join game.jacket on player.PN=jacket.PN
---where player.name="Nicklas Jansson"
+--select avg(age) from game.player;
