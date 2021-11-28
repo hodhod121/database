@@ -26,12 +26,12 @@ CREATE TABLE `player_contest` (
   `Id` int NOT NULL AUTO_INCREMENT,
   `PN` varchar(255) NOT NULL,
   `CName` varchar(255) NOT NULL,
-  PRIMARY KEY (`Id`),
+  PRIMARY KEY (`Id`,`PN`,`CName`),
   KEY `PN` (`PN`),
   KEY `CName` (`CName`),
   CONSTRAINT `player_contest_ibfk_1` FOREIGN KEY (`PN`) REFERENCES `player` (`PN`) ON DELETE CASCADE,
   CONSTRAINT `player_contest_ibfk_2` FOREIGN KEY (`CName`) REFERENCES `contest` (`CName`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `player_contest` (
 
 LOCK TABLES `player_contest` WRITE;
 /*!40000 ALTER TABLE `player_contest` DISABLE KEYS */;
-INSERT INTO `player_contest` VALUES (1,'741223-4525','Big Golf Cup Skövde'),(2,'861223-4512','Big Golf Cup Skövde'),(3,'961213-4587','Big Golf Cup Skövde');
+INSERT INTO `player_contest` VALUES (1,'741223-4525','Big Golf Cup Skövde'),(6,'861223-4512','Big Golf Cup Skövde'),(3,'961213-4587','Big Golf Cup Skövde');
 /*!40000 ALTER TABLE `player_contest` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-26  7:49:38
+-- Dump completed on 2021-11-28  6:53:09

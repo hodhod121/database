@@ -27,9 +27,7 @@ CREATE TABLE `jacket` (
   `size` int DEFAULT NULL,
   `material` varchar(255) DEFAULT NULL,
   `PN` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`model`),
-  KEY `PN_idx` (`PN`),
-  CONSTRAINT `PN` FOREIGN KEY (`PN`) REFERENCES `player` (`PN`)
+  PRIMARY KEY (`model`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -39,7 +37,7 @@ CREATE TABLE `jacket` (
 
 LOCK TABLES `jacket` WRITE;
 /*!40000 ALTER TABLE `jacket` DISABLE KEYS */;
-INSERT INTO `jacket` VALUES ('nicy',34,'goretex','961213-4587'),('plea',36,'fleece','961213-4587');
+INSERT INTO `jacket` VALUES ('diamond',36,'goretex','961213-4587'),('plea',36,'fleece','961213-4587'),('polyster',36,'goretex','861223-4512');
 /*!40000 ALTER TABLE `jacket` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-26  7:49:38
+-- Dump completed on 2021-11-28  6:53:09

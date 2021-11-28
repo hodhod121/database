@@ -26,9 +26,7 @@ CREATE TABLE `construction` (
   `Nr` int DEFAULT NULL,
   `SerialNr` int NOT NULL,
   `hardness` int DEFAULT NULL,
-  PRIMARY KEY (`SerialNr`),
-  KEY `Nr_idx` (`Nr`),
-  CONSTRAINT `Nr` FOREIGN KEY (`Nr`) REFERENCES `club` (`Nr`)
+  PRIMARY KEY (`SerialNr`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -51,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-26  7:49:37
+-- Dump completed on 2021-11-28  6:53:08

@@ -26,7 +26,7 @@ CREATE TABLE `precipitation_contest` (
   `Id` int NOT NULL AUTO_INCREMENT,
   `type` varchar(255) NOT NULL,
   `CName` varchar(255) NOT NULL,
-  PRIMARY KEY (`Id`),
+  PRIMARY KEY (`Id`,`type`,`CName`),
   KEY `type` (`type`),
   KEY `CName` (`CName`),
   CONSTRAINT `precipitation_contest_ibfk_1` FOREIGN KEY (`type`) REFERENCES `precipitation` (`type`) ON DELETE CASCADE,
@@ -53,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-26  7:49:37
+-- Dump completed on 2021-11-28  6:53:08

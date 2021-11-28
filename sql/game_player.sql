@@ -36,7 +36,7 @@ CREATE TABLE `player` (
 
 LOCK TABLES `player` WRITE;
 /*!40000 ALTER TABLE `player` DISABLE KEYS */;
-INSERT INTO `player` VALUES ('Gholi Bigi',21,'731213-2587'),('Annika Persson',53,'741223-4525'),('Ahmed Sami',21,'781213-2587'),('Nicklas Jansson',35,'861223-4512'),('Johan Andersson',25,'961213-4587');
+INSERT INTO `player` VALUES ('Gholi Bigi',21,'731213-2587'),('Annika Persson',53,'741223-4525'),('Ahmed Sami',21,'781213-2587'),('Nicklas Jansson',32,'861223-4512'),('Johan Andersson',25,'961213-4587');
 /*!40000 ALTER TABLE `player` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-26  7:49:38
+-- Dump completed on 2021-11-28  6:53:09
